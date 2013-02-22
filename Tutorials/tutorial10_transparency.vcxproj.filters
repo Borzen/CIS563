@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\tutorial10_transparency\tutorial10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\controls.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\texture.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\objloader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\vboindexer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\shader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\controls.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\texture.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\objloader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\vboindexer.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A204585C-0A8A-476F-94AE-961ED51770A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{192DBD77-202C-4B2B-9E81-6B30668D152D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

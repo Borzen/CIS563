@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Itanium">
+      <Configuration>Debug</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Itanium">
+      <Configuration>Release</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B655D7BF-997C-4DA4-BA21-81A5BDA6650A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Itanium</Platform>
+    <ProjectName>tutorial11_2d_fonts</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">C:\Users\Borzen\Documents\CIS563\Tutorials\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">tutorial11_2d_fonts.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">tutorial11_2d_fonts</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">C:\Users\Borzen\Documents\CIS563\Tutorials\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">tutorial11_2d_fonts.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">tutorial11_2d_fonts</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/AntTweakBar-1.15/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glfw-2.7.6/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glm-0.9.4.0;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glew-1.9.0/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Borzen/Documents/CIS563/Tutorials/Debug/tutorial11_2d_fonts.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/AntTweakBar-1.15/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glfw-2.7.6/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glm-0.9.4.0;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glew-1.9.0/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/AntTweakBar-1.15/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glfw-2.7.6/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glm-0.9.4.0;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glew-1.9.0/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -E copy C:/Users/Borzen/Documents/CIS563/Tutorials/$(Configuration)/tutorial11_2d_fonts.exe C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/tutorial11_2d_fonts/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>;-lglu32.lib;-lopengl32.lib;external\Debug\GLFW_276.lib;external\Debug\GLEW_190.lib;-lglu32.lib;-lopengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Borzen/Documents/CIS563/Tutorials/Debug/tutorial11_2d_fonts.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Borzen/Documents/CIS563/Tutorials/Debug/tutorial11_2d_fonts.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/AntTweakBar-1.15/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glfw-2.7.6/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glm-0.9.4.0;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glew-1.9.0/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Borzen/Documents/CIS563/Tutorials/Release/tutorial11_2d_fonts.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/AntTweakBar-1.15/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glfw-2.7.6/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glm-0.9.4.0;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glew-1.9.0/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/AntTweakBar-1.15/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glfw-2.7.6/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glm-0.9.4.0;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/external/glew-1.9.0/include;C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -E copy C:/Users/Borzen/Documents/CIS563/Tutorials/$(Configuration)/tutorial11_2d_fonts.exe C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/tutorial11_2d_fonts/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>;-lglu32.lib;-lopengl32.lib;external\Release\GLFW_276.lib;external\Release\GLEW_190.lib;-lglu32.lib;-lopengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Borzen/Documents/CIS563/Tutorials/Release/tutorial11_2d_fonts.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Borzen/Documents/CIS563/Tutorials/Release/tutorial11_2d_fonts.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">Building Custom Rule C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33 -BC:/Users/Borzen/Documents/CIS563/Tutorials --check-stamp-file C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/CMakeLists.txt;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\CMakeLists.txt;C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\2.8.10.2\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\CreateLaunchers.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\CleanDirectoryList.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\MSVCMultipleProcessCompile.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">Building Custom Rule C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33 -BC:/Users/Borzen/Documents/CIS563/Tutorials --check-stamp-file C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">C:/Users/Borzen/Downloads/OpenGL-tutorial_v0010_33/OpenGL-tutorial_v0010_33/CMakeLists.txt;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\CMakeLists.txt;C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\2.8.10.2\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\CreateLaunchers.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\CleanDirectoryList.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\MSVCMultipleProcessCompile.cmake;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\rpavlik-cmake-modules-1c73e35\launcher-templates\targetlauncher.cmd.in;C:\Users\Borzen\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">C:\Users\Borzen\Documents\CIS563\Tutorials\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\shader.hpp" />
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\controls.hpp" />
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\texture.hpp" />
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\objloader.hpp" />
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\vboindexer.hpp" />
+    <ClInclude Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\text2D.hpp" />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\tutorial11_2d_fonts\tutorial11.cpp"  />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\shader.cpp"  />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\controls.cpp"  />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\texture.cpp"  />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\objloader.cpp"  />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\vboindexer.cpp"  />
+    <ClCompile Include="..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\common\text2D.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Borzen/Documents/CIS563/Tutorials/external/GLEW_190.vcxproj">
+      <Project>20F1B00A-09DD-4021-B06B-1CE0E271F070</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Borzen/Documents/CIS563/Tutorials/external/GLFW_276.vcxproj">
+      <Project>6F278721-33B0-416C-ADB3-7B7FCD5562CB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Borzen/Documents/CIS563/Tutorials/ZERO_CHECK.vcxproj">
+      <Project>5FFEDAC8-8ECA-492F-B079-B5D76480412B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

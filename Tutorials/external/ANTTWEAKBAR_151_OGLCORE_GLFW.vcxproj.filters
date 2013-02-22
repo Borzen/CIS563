@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\LoadOGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\LoadOGLCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwColors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwEventGLFW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwFonts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwOpenGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwOpenGLCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwPrecomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\AntPerfTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\LoadOGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\LoadOGLCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\MiniGLFW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwColors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwFonts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwOpenGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwOpenGLCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\AntTweakBar-1.15\src\TwPrecomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\external\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A204585C-0A8A-476F-94AE-961ED51770A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{08037D5E-1D41-41B6-B556-D836704BA85E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
