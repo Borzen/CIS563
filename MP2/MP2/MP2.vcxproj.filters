@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\tutorial07_model_loading\TextureFragmentShader.fragmentshader" />
-    <None Include="..\..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\tutorial07_model_loading\TransformVertexShader.vertexshader" />
-    <None Include="..\..\..\..\..\Downloads\OpenGL-tutorial_v0010_33\OpenGL-tutorial_v0010_33\tutorial07_model_loading\uvmap.DDS" />
     <None Include="mushroom.geo" />
     <None Include="pCylinder1.geo" />
     <None Include="polySurface1.geo" />
