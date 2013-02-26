@@ -50,14 +50,12 @@ bool importGEO(const char * path, std::vector<int> & out_nVertices, std::vector<
 				max = out_vertexindex[i];
 			}
 		}
-		out_vertexies.resize(max+2);
+		out_vertexies.resize(sumOfN/4);
 		fgets(buf,100,f);
 		fgets(buf,100,f);
 		fgets(buf,100,f);
 		fgets(buf,100,f);
 		int i = 0;
-		//out_vertexies[i] = glm::vec3 (0,0,0);
-		//i++;
 		while(!feof(f)){
 			float a=0,b=0,c=0,d = 0;
 			fscanf(f,"%f %f %f %f\n",&a,&b,&c,&d);
@@ -115,7 +113,7 @@ int main( void )
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 	
-	
+	glGenBuffersARB(1,0);
 	//static const GLfloat g_vertex_buffer_data[] = { 
 	//	-1.0f, -1.0f, 0.0f,
 	//	 1.0f, -1.0f, 0.0f,
