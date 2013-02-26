@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <vector>
 
+
 // Include GLEW
 #include <GL/glew.h>
 
@@ -14,7 +15,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 using namespace glm;
 
-bool importGEO(const char * path, std::vector<int> & out_nVertices, std::vector<int> & out_vertexindex, std::vector<glm::vec3> & out_vertexies){
+bool importGEO(const char * path, std::vector<int> & out_nVertices, std::vector<unsigned short> & out_vertexindex, std::vector<glm::vec3> & out_vertexies){
 	FILE* f;
 	int sumOfN = 0;
 	f = fopen(path,"r");
@@ -71,7 +72,7 @@ bool importGEO(const char * path, std::vector<int> & out_nVertices, std::vector<
 int main( void )
 {
 	std::vector<int> nVertices;
-	std::vector<int> vertexindex;
+	std::vector<unsigned short> vertexindex;
 	std::vector<glm::vec3> vertices;
 	importGEO("pCylinder1.geo",nVertices,vertexindex,vertices);
 	// Initialise GLFW
@@ -113,17 +114,15 @@ int main( void )
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 	
-	glGenBuffersARB(1,0);
-	//static const GLfloat g_vertex_buffer_data[] = { 
-	//	-1.0f, -1.0f, 0.0f,
-	//	 1.0f, -1.0f, 0.0f,
-	//	 0.0f,  1.0f, 0.0f,
-	//};
+	GLuint elementbuffer;
+	glGenBuffers(1, &elementbuffer);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, vertexindex.size()*sizeof(unsigned short), &vertexindex[0], GL_STATIC_DRAW);
 
 	GLuint vertexbuffer;
 	glGenBuffers(1, &vertexbuffer);
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-	glBufferData(GL_ARRAY_BUFFER,vertices.size()*sizeof(glm::vec3),&vertices[0],GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER,vertexbuffer);
+	glBufferData(GL_ARRAY_BUFFER, vertices.size()*sizeof(glm::vec3), &vertices[0], GL_STATIC_DRAW);
 
 	glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 	do{
@@ -135,17 +134,15 @@ int main( void )
 		// 1rst attribute buffer : vertices
 		glEnableVertexAttribArray(0);
 		glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-		glVertexAttribPointer(
-			0,                  // attribute 0. No particular reason for 0, but must match the layout in the shader.
-			3,                  // size
-			GL_FLOAT,           // type
-			GL_FALSE,           // normalized?
-			0,                  // stride
-			(void*)0            // array buffer offset
+		glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,0,(void*)0);
+		// Draw the triangles !
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,elementbuffer);
+		glDrawElements(
+			GL_TRIANGLES,      // mode
+			vertexindex.size(),    // count
+			GL_UNSIGNED_SHORT,   // type
+			(void*)0           // element array buffer offset
 		);
-
-		// Draw the triangle !
-		glDrawArrays(GL_TRIANGLES, 0, 3); // 3 indices starting at 0 -> 1 triangle
 
 		glDisableVertexAttribArray(0);
 
@@ -161,7 +158,9 @@ int main( void )
 
 	// Cleanup VBO
 	glDeleteBuffers(1, &vertexbuffer);
+	glDeleteBuffers(1,&elementbuffer);
 	glDeleteVertexArrays(1, &VertexArrayID);
+
 
 
 	return 0;
