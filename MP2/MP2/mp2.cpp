@@ -220,10 +220,11 @@ int main( void )
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 	
-	//Error here.
+	
 	GLuint elementbuffer;
 	glGenBuffers(1, &elementbuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
+	//errors on next line and crashes
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, o_vertexindex.size()*sizeof(unsigned short), &o_vertexindex[0], GL_STATIC_DRAW);
 
 	GLuint normalbuffer;
@@ -253,7 +254,6 @@ int main( void )
 		glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE,0,(void*)0);
 		// Draw the triangles !
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,elementbuffer);
-		//error here
 		glDrawElements(
 			GL_TRIANGLES,      // mode
 			vertexindex.size(),    // count
