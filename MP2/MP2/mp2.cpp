@@ -174,9 +174,8 @@ int main( void )
 	std::vector<unsigned short> vertexindex;
 	std::vector<glm::vec3> vertices;
 	std::vector<glm::vec3> normals;
-	importGEO("pCylinder.geo",nVertices,vertexindex,vertices,normals);
+	importGEO("pCylinder1.geo",nVertices,vertexindex,vertices,normals);
 	
-	std::vector<int> o_nVertices;
 	std::vector<unsigned short> o_vertexindex;
 	std::vector<glm::vec3> o_vertices;
 	std::vector<glm::vec3> o_normals;
@@ -220,7 +219,7 @@ int main( void )
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 	
-	//Error here.
+	
 	GLuint elementbuffer;
 	glGenBuffers(1, &elementbuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
@@ -250,13 +249,12 @@ int main( void )
 
 		glEnableVertexAttribArray(1);
 		glBindBuffer(GL_ARRAY_BUFFER,normalbuffer);
-		glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE,0,(void*)0);
+		glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,0,(void*)0);
 		// Draw the triangles !
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,elementbuffer);
-		//error here
 		glDrawElements(
 			GL_TRIANGLES,      // mode
-			vertexindex.size(),    // count
+			o_vertexindex.size(),    // count
 			GL_UNSIGNED_SHORT,   // type
 			(void*)0           // element array buffer offset
 		);
@@ -274,9 +272,10 @@ int main( void )
 	glfwTerminate();
 
 	// Cleanup VBO
-	glDeleteBuffers(1, &vertexbuffer);
-	glDeleteBuffers(1,&elementbuffer);
+	glDeleteBuffers(1, &vertexbuffer);	
 	glDeleteBuffers(1,&normalbuffer);
+	glDeleteBuffers(1,&elementbuffer);
+
 	glDeleteVertexArrays(1, &VertexArrayID);
 	return 0;
 }

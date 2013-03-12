@@ -20,9 +20,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="scenefile1.geo" />
     <None Include="mushroom.geo" />
     <None Include="pCylinder1.geo" />
     <None Include="polySurface1.geo" />
-    <None Include="scenefile1.geo" />
   </ItemGroup>
 </Project>

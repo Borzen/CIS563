@@ -81,10 +81,18 @@
     <ClCompile Include="mp2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mushroom.geo" />
-    <None Include="pCylinder1.geo" />
-    <None Include="polySurface1.geo" />
-    <None Include="scenefile1.geo" />
+    <None Include="mushroom.geo">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="pCylinder1.geo">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="polySurface1.geo">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="scenefile1.geo">
+      <FileType>Document</FileType>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
