@@ -117,6 +117,7 @@ bool importGEO(const char * path, std::vector<int> & out_nVertices, std::vector<
 			}
 		}
 		out_vertexies.resize(max+1);
+		std::vector<glm::vec3> tNormals;
 		out_normals.resize(size);
 		fgets(buf,100,f);
 		fgets(buf,100,f);
@@ -174,12 +175,12 @@ int main( void )
 	std::vector<unsigned short> vertexindex;
 	std::vector<glm::vec3> vertices;
 	std::vector<glm::vec3> normals;
-	importGEO("pCylinder1.geo",nVertices,vertexindex,vertices,normals);
+	importGEO("scenefile1.geo",nVertices,vertexindex,vertices,normals);
 	
 	std::vector<unsigned short> o_vertexindex;
 	std::vector<glm::vec3> o_vertices;
 	std::vector<glm::vec3> o_normals;
-	indexVBO_slow(vertices,normals,o_vertexindex,o_vertices,o_normals);
+	//indexVBO_slow(vertices,normals,o_vertexindex,o_vertices,o_normals);
 	// Initialise GLFW
 	if( !glfwInit() )
 	{
@@ -224,17 +225,17 @@ int main( void )
 	glGenBuffers(1, &elementbuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
 	//errors on next line and crashes
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, o_vertexindex.size()*sizeof(unsigned short), &o_vertexindex[0], GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, vertexindex.size()*sizeof(unsigned short), &vertexindex[0], GL_STATIC_DRAW);
 
 	GLuint normalbuffer;
 	glGenBuffers(1, &normalbuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, normalbuffer);
-	glBufferData(GL_ARRAY_BUFFER,o_normals.size()*sizeof(glm::vec3),&o_normals[0],GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER,normals.size()*sizeof(glm::vec3),&normals[0],GL_STATIC_DRAW);
 
 	GLuint vertexbuffer;
 	glGenBuffers(1, &vertexbuffer);
 	glBindBuffer(GL_ARRAY_BUFFER,vertexbuffer);
-	glBufferData(GL_ARRAY_BUFFER, o_vertices.size()*sizeof(glm::vec3), &o_vertices[0], GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, vertices.size()*sizeof(glm::vec3), &vertices[0], GL_STATIC_DRAW);
 
 	glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 	do{
@@ -255,7 +256,7 @@ int main( void )
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,elementbuffer);
 		glDrawElements(
 			GL_TRIANGLES,      // mode
-			o_vertexindex.size(),    // count
+			vertexindex.size(),    // count
 			GL_UNSIGNED_SHORT,   // type
 			(void*)0           // element array buffer offset
 		);
@@ -273,9 +274,9 @@ int main( void )
 	glfwTerminate();
 
 	// Cleanup VBO
-	glDeleteBuffers(1, &vertexbuffer);	
-	glDeleteBuffers(1, &normalbuffer);
-	glDeleteBuffers(1, &elementbuffer);
+	//glDeleteBuffers(1, &vertexbuffer);	
+	//glDeleteBuffers(1, &normalbuffer);
+	//glDeleteBuffers(1, &elementbuffer);
 	glDeleteVertexArrays(1, &VertexArrayID);
 	return 0;
 }
