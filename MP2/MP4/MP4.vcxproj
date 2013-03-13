@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{68650C33-D34A-40D0-9F94-244727C09122}</ProjectGuid>
+    <ProjectGuid>{1C738E72-B922-4628-A063-5594907D33E2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MP4</RootNamespace>
   </PropertyGroup>
@@ -74,16 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="mp4.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="mushroom.geo" />
-    <None Include="pCylinder1.geo" />
-    <None Include="polySurface1.geo" />
-    <None Include="scenefile1.geo" />
-=======
->>>>>>> cd9b8eb114645b3f5160a59eb9185adbbe604886
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

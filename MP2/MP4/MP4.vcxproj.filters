@@ -14,18 +14,9 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <ClCompile Include="mp4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="mushroom.geo" />
-    <None Include="pCylinder1.geo" />
-    <None Include="polySurface1.geo" />
-    <None Include="scenefile1.geo" />
-  </ItemGroup>
-=======
->>>>>>> cd9b8eb114645b3f5160a59eb9185adbbe604886
 </Project>
