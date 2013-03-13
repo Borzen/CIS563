@@ -74,6 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="mp4.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +82,8 @@
     <None Include="pCylinder1.geo" />
     <None Include="polySurface1.geo" />
     <None Include="scenefile1.geo" />
+=======
+>>>>>>> cd9b8eb114645b3f5160a59eb9185adbbe604886
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

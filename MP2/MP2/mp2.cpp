@@ -223,6 +223,7 @@ int main( void )
 	GLuint elementbuffer;
 	glGenBuffers(1, &elementbuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
+	//errors on next line and crashes
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, o_vertexindex.size()*sizeof(unsigned short), &o_vertexindex[0], GL_STATIC_DRAW);
 
 	GLuint normalbuffer;
