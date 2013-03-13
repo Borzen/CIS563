@@ -273,9 +273,8 @@ int main( void )
 
 	// Cleanup VBO
 	glDeleteBuffers(1, &vertexbuffer);	
-	glDeleteBuffers(1,&normalbuffer);
-	glDeleteBuffers(1,&elementbuffer);
-
+	glDeleteBuffers(1, &normalbuffer);
+	glDeleteBuffers(1, &elementbuffer);
 	glDeleteVertexArrays(1, &VertexArrayID);
 	return 0;
 }
